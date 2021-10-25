@@ -31,7 +31,7 @@ body {
 }
 
 /* Search Bar section */
-.search-container {
+#searchCon {
   width: 550px;
   max-width: 584px;
   height: 44px;
@@ -44,9 +44,9 @@ body {
   color: #202124;
 }
 
-.search-container:hover {
+#searchCon:hover {
   box-shadow: 0 1px 6px rgba(32, 32, 36, 0.28);
-  border-color: rbga(223, 225, 229, 0);
+  border-color: rgba(223, 225, 229, 0);
 }
 
 .bi-search {
@@ -78,6 +78,8 @@ body {
   align-self: center;
   font-size: 14px;
   color: #202124;
+  display: none;
+  cursor: pointer;
 }
 
 /* Search Bar Buttons */
@@ -164,7 +166,7 @@ footer h6 {
 
 /* media queries */
 @media (max-width: 576px) {
-  .search-container {
+  #searchCon {
     width: 90%;
   }
   .footer-body {
